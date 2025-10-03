@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí - Paloma Rojas</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+       
+        <header class="header">
+            <h1>PALOMA ROJAS</h1>
+            <p>Diseñadora Integral</p>
+        </header>
+
+        
+        <nav class="nav">
+            <a href="index.html">Portafolio</a>
+            <a href="about.html" class="active">Sobre mí</a>
+        </nav>
+
+      
+        <h2>SOBRE MÍ</h2>
+        
+        <section class="about">
+            <img src="images/iyo.png" alt="Foto de Paloma Rojas">
+
+            
+            <p>
+            ¡Hola! Soy Paloma Rojas, diseñadora integral apasionada por la creación de experiencias visuales que comuniquen ideas de manera clara y atractiva.
+            Con interés en el diseño ux/ui, diseño de productos y de servicios. Me apasiona cómo el diseño transforma ideas en realidades tangibles y mejora la vida de las personas. 
+            Me gusta combinar creatividad con funcionalidad, siempre poniendo al usuario en el centro del diseño. Además, disfruto aprender nuevas técnicas y herramientas para mantenerme actualizada en el mundo del diseño.
+            Fuera del trabajo, me interesa la ilustración, la fotografía y la música.</p>
+        </section>
+  <canvas id="aqui"></canvas>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+        
+            new Chart("aqui", {
+                type: "bubble",
+                data: {
+                    datasets: [{
+    label: 'Cantidad de Gatos por año',
+    data: [{
+      x: 2005,
+      y: 1,
+      r: 10
+    }, {
+      x: 2010,
+      y: 3,
+      r: 15
+    }, {
+      x: 2015,
+      y: 5,
+      r: 20
+    }, {
+      x: 2020,
+      y: 7,
+      r: 25
+    }, {
+      x: 2025,
+      y: 10,
+      r: 30
+    }
+],
+    backgroundColor: 'rgb(13, 70, 88)'
+  }]
+                },
+                options: {
+                    layout: {
+        padding: {
+          top: 90,
+          right: 50,
+          bottom: 40,
+          left: 50
+        }
+      },
+                    plugins: {
+                        legend: {
+                            display: true,
+                        },
+
+                    },
+
+                },
+            });
+        </script>
+
+    
+
+        
+        <footer class="footer">
+            <p>© 2025 Paloma Rojas. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#">Behance</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
